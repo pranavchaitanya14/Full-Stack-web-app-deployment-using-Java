@@ -7,7 +7,7 @@ export default function Login() {
   const [password, setPassword] = useState("");
 
   const handleLogin = async () => {
-    await axios.post("/api/login", { email, password });
+    await axios.post("/api/login", { email, passwOrd });
     window.location.href = "/dashboard";
   };
 
